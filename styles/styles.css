@@ -1,51 +1,77 @@
+:root{
+/* Colors */
+--primary-color: darkblue;
+--light-text-color: white;
+--aside-background-color: #eee;
+--aside-text-color: #333;
+--aside-border-color: rgba(0, 0, 0, 0.2);
+--shadow-color: gray;
+
+/* Spacing and Measurements */
+--nav-spacing: 10px;
+--link-spacing: 20px;
+--default-border: 1px solid black;
+--default-shadow: 0 0 30px var(--shadow-color);
+--aside-margin: 1rem;
+--aside-padding: 1rem;
+--main-max-width: 840px;
+}
+
 nav {
-background-color:darkblue;
-padding: 10px;
+/* Use of color and spacing */
+background-color: var(--primary-color);
+padding: var(--nav-spacing);
 }
 
 nav a{
-    color: white;
-    display: block;
-    padding: 20px;
+/* Use of color and spacing */
+color: var(--light-text-color);
+display: block;
+padding: var(--link-spacing);
 }
 
 h1{
-    color: darkblue;
+/* Use of color */
+color: var(--primary-color);
 }
 
 main img{
-    width: 150px;
-    height: auto;
-    border: 1px solid black;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
+width: 150px;
+height: auto;
+/* Use of border and shadow */
+border: var(--default-border);
+padding: 2px;
+box-shadow: var(--default-shadow);
 }
 
 p{
-    padding: 0px;
+/* Keeping 0px, as it's not a reusable value */
+padding: 0px;
 }
 
 main{
-    max-width: 840px;
+max-width: var(--main-max-width);
 }
 
 aside{
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
+width: 20rem;
+/* Use of margin, border, padding, and colors */
+margin: var(--aside-margin);
+border: 1px solid var(--aside-border-color); /* Note the color variable in the border */
+padding: var(--aside-padding);
+background-color: var(--aside-background-color);
+color: var(--aside-text-color);
+text-align: center;
 }
 
 aside img{
-    width: 200px;
-    height: auto;
+width: 200px;
+height: auto;
 }
 
 footer{
-    margin-top: 15px;
-    border-top: 1px solid #000;
-    text-align: center;
+/* Use of spacing and border */
+margin-top: 15px;
+border-top: 1px solid #000; /* Could also use var(--default-border) here! */
+text-align: center;
 }
