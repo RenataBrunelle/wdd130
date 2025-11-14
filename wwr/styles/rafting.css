@@ -89,6 +89,7 @@ h2 {
     background-color: rgba(38, 70, 83, 0.9);
     color: #fff;
     padding: 16px; 
+    overflow: hidden; 
 }
 
 .hero article img {
