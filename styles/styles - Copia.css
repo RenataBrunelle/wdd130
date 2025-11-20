@@ -1,0 +1,105 @@
+:root{
+/* Colors */
+--primary-color: darkblue;
+--light-text-color: white;
+--box-background-color: #ddd;
+--box-text-color: #000;
+--box-border-color: 1px solid rgb(0 0 0 / 10%);
+--shadow-color: gray;
+
+/* Spacing and Measurements */
+--nav-spacing: 10px;
+--link-spacing: 5px;
+--default-border: 1px solid black;
+--default-shadow: 0 0 30px var(--shadow-color);
+--box-margin: 1rem;
+--box-padding: 1rem;
+--main-max-width: 840px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*
+Definir o seletor universal com margem e preenchimento zero (0) garantirá que todos os elementos da página não tenham margem nem 
+preenchimento, independentemente das configurações padrão do navegador. Isso facilitará o controle do layout da página.
+
+Quando a border-sizingpropriedade é definida com o valor não padrão de ` box-sizing` border-box, isso instrui o navegador 
+a considerar qualquer borda e preenchimento nos valores especificados para a largura e altura de um elemento.
+*/
+
+/*Class Selector*/
+.box {
+   margin: var(--box-margin);
+   border: var(--box-border-color); /* Note the color variable in the border */
+   padding: var(--box-padding);
+   background-color: var(--box-background-color);
+   color: var(--box-text-color);
+}
+
+nav {
+/* Use of color and spacing */
+background-color: var(--primary-color);
+padding: var(--nav-spacing);
+}
+
+nav a{
+/* Use of color and spacing */
+color: var(--light-text-color);
+display: block;
+padding: var(--link-spacing);
+}
+
+h1{
+/* Use of color */
+color: var(--primary-color);
+}
+
+main img{
+width: 150px;
+height: auto;
+/* Use of border and shadow */
+border: var(--default-border);
+padding: 2px;
+box-shadow: var(--default-shadow);
+float: right;
+}
+
+p{
+/* Keeping 0px, as it's not a reusable value */
+padding: 10px;
+}
+
+main{
+max-width: var(--main-max-width);
+}
+
+aside{
+width: 20rem;
+text-align: center;
+}
+
+aside img{
+width: 200px;
+height: auto;
+}
+
+aside h2 {
+  position: relative;
+  top: 0px;
+  left: 5px;
+}
+
+footer{
+/* Use of spacing and border */
+margin-top: 15px;
+border-top: 1px solid #000; /* Could also use var(--default-border) here! */
+text-align: center;
+}
+
+ul li{
+    padding-left: 1em;
+    list-style-position: inside;
+}
