@@ -136,15 +136,12 @@ footer{
   justify-content: space-around; /* Distribui o espaço entre as figuras */
   align-items: flex-start; /* Alinha os itens ao topo */
   margin-top: 12px;
-  align-items: center;
-  justify-content: space-around; 
   width: 100%; 
 }
 
 .gallery figure {
   display: flex;
-  flex-direction: column; /* CRUCIAL: Empilha os filhos verticalmente */
-  align-items: center;    /* Centraliza a imagem e a legenda */
+  flex-direction: column; /* Empilha os filhos verticalmente */
   max-width: 150px;       /* Limite a largura para caber no layout */
   margin: 0 5px;          /* Adiciona margem lateral */
 }
