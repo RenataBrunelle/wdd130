@@ -17,13 +17,13 @@ body {
   color: var(--third-color);
 }
 
- header, main, footer { 
+ header, main{ 
   width: 840px;
   margin: 0 auto;
 }
 
 h2 {
-  margin-top: 40px;
+  margin-top: 12px;
   font-family: var(--heading-font);
   color: var(--second-color);
   background-color: var(--third-color);
@@ -32,18 +32,43 @@ h2 {
   width: 100%;
 }
 
-nav, p { 
-  margin: 16px;
-  padding: 8px;
+header nav{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
-ul a{
+header nav a{
     text-decoration: none;
-    color: var(--third-color);
+    background-color: #264653;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: block;
+    border-left: none;
+    color: var(--second-color);
+    border: 2px solid black;    
 }
 
+footer{
+  width: 840px;
+  margin: 50px auto 36px auto;
+  display: flex;
+  padding: 20px 40px; /* Adiciona espaço interno (vertical e horizontal) */
+  justify-content: space-between; /* Distribui o espaço entre os elementos */
+  align-items: center; /* Centraliza verticalmente o conteúdo */
+}
 
 /*CSS Class selectors*/
+
+.socialmedia img {
+    /* Define um tamanho para os ícones */
+    width: 30px; 
+    height: 30px; 
+    margin-left: 10px; /* Adiciona espaço entre os ícones */
+}
 
 .socialmedia a {
     text-decoration: none;
@@ -66,12 +91,11 @@ ul a{
 
 .hero article{
     position: absolute;
-    bottom: 40px;
+    bottom: 25px;
     width: 90%;
     left: 40px;
     background-color: var(--primary-color);
     color: #fff; 
-    font-family: var(--heading-font);
 }
 
 .hero article img {
@@ -84,4 +108,54 @@ ul a{
   display: block;
   width: 100%;
   height: auto;
+}
+
+.hero article p{
+  padding: 20px;
+}
+
+.history{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.history img{
+    width: 250px;
+    margin: 0 20px;
+}
+
+.history p {
+    margin-top: 12px ;
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-around; /* Distribui o espaço entre as figuras */
+  align-items: flex-start; /* Alinha os itens ao topo */
+  margin-top: 12px;
+  align-items: center;
+  justify-content: space-around; 
+  width: 100%; 
+}
+
+.gallery figure {
+  display: flex;
+  flex-direction: column; /* CRUCIAL: Empilha os filhos verticalmente */
+  align-items: center;    /* Centraliza a imagem e a legenda */
+  max-width: 150px;       /* Limite a largura para caber no layout */
+  margin: 0 5px;          /* Adiciona margem lateral */
+}
+
+.gallery figure img {
+    max-width: 100%; /* Garante que a imagem se ajuste à figura */
+    height: 100px;
+    object-fit: cover;
+}
+
+figcaption{
+  text-align: center;
+  margin-top: 5px; /* Adiciona um pequeno espaço entre a imagem e a legenda */
 }
