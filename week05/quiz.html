@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renata Brunelle Alves Menezes Vargas | WDD 130</title>
+    <meta name="description" content="Renata Brunelle BYU-Idaho WDD 130 course home page">
+    <meta name="author" content="Renata Brunelle">
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+
+<body>
+    <main>
+        <h1>WDD 130 | HTML Form - Quiz HTML and CSS</h1>
+        <form>
+            <label for="q1"><span>1.</span>What does the acronym CSS stand for?</label>
+            <input type="text" id="q1" name="q1">
+            <!--o nome no momento não é útil, mas quando se começa a construir o componente de backend, a parte do servidor que conecta à sua página web, 
+            então o nome pode ser útil-->
+            <label for="q2"><span>2.</span>How are the id class attibutes selected in CSS</label>
+            <textarea id="q2" name="q2"></textarea>
+            <!--textarea para digitar textos grandes e mais de uma linha-->
+            <label for="q3"><span>3.</span>Which of the following is a valid CSS comment?</label>
+            <select id="q3" name="q3">
+                <option disabled selected>Choose one</option>
+                <!--Acima adicionada uma opção não selecionável para deixar como rosto do campo-->
+                <!--As opções precisa de um rótulo para ser enviado ao servidor, a fim de identifica-las sem usar tanta informação, usa-se o value para isso-->
+                <option value="A">//this is a CSS comment</option>
+                <option value="B">/*this is a CSS comment*/</option>
+                <option value="C"># this is a CSS comment</option>
+            </select>
+            <label for="q4"><span>4.</span>What is the bottom margin given this declaration?
+                <div class="exampleCode">margin: 10px 5px 15px</div>
+                <!--o div em label será para estilizar melhor o exemplo de código para a questão-->
+            </label>
+            <input type="number" id="q4" name="q4">
+            <!--um campo de número se tentar digitar algo diferente não funciona, "e" funciona porque é contado como notação científica-->
+            <button type="submit">Submit Quiz</button>
+            <!--o tipo submit informa ao navegador que ao clicar no botão, o formulário deve ser preenchido completamente e enviado ao servidor-->
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
+
+<!--Text usada para respostas curtas e textarea para respostas longas-->
+<!--Divs tem regras de espaçamento diferentes, então para organizar melhor 
+    o form pode ser usado, ele pode ser usado para organizar as perguntas-->
+<!--caso queira deixar algo em especifico diferente pode usar o span como atributo-->
