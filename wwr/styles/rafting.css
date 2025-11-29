@@ -43,7 +43,7 @@ header nav{
 
 header nav a{
     text-decoration: none;
-    background-color: #264653;
+    background-color: var(--third-color);
     padding: 20px;
     padding-left: 40px;
     padding-right: 40px;
@@ -71,7 +71,7 @@ button{
     margin: 1rem 0 0 0; /* Remove margens laterais desnecessárias */
     grid-column: 1 / -1;
     background-color: var(--third-color);
-    color: #fff;
+    color: var(--second-color);
     border: none;
     border-radius: .5rem; 
     padding: .75rem;
@@ -119,7 +119,7 @@ footer{
   text-align: center;
   background-color: var(--primary-color);
   font-family: var(--heading-font);
-  color: #fff; 
+  color: var(--second-color); 
 }
 
 .hero article{
@@ -128,7 +128,7 @@ footer{
     width: 90%;
     left: 40px;
     background-color: var(--primary-color);
-    color: #fff; 
+    color: var(--second-color); 
 }
 
 .hero article img {
@@ -216,10 +216,8 @@ figcaption{
 .main-inputs input{
     width: 100%;
     padding: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--primary-color);
     border-radius: 4px;
-
-    
 }
 
 .form-inputs fieldset, .form-inputs textarea {
