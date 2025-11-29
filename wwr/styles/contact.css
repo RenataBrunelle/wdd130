@@ -1,0 +1,180 @@
+:root {
+  --primary-color: rgba(38, 70, 83, 0.7); 
+  --second-color: white; 
+  --third-color: #264653;
+  --heading-font: "Times New Roman", "Georgia", serif;
+  --body-font: Arial, Helvetica, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  color: var(--third-color);
+    font-size: 1.1em;
+}
+
+ header, main{ 
+  width: 840px;
+  margin: 0 auto;
+}
+
+header nav{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+header nav a{
+    text-decoration: none;
+    background-color: #264653;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: block;
+    border-left: none;
+    color: var(--second-color);
+    border: 2px solid black;    
+}
+
+h2 {
+  margin-top: 12px;
+  font-family: var(--heading-font);
+  color: var(--second-color);
+  background-color: var(--third-color);
+  padding: 12px;
+  text-align: center;
+  width: 100%;
+}
+
+
+form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px; /* Adiciona um espaço entre o mapa e os inputs */
+  align-items: flex-start; /* Alinha o conteúdo ao topo */
+}
+
+form iframe{
+  grid-column: 1 / 2;
+  width: 100%;
+  min-height: 300px;
+}
+
+
+button{
+    margin: 1rem 0 0 0; /* Remove margens laterais desnecessárias */
+    grid-column: 1 / -1;
+    background-color: var(--third-color);
+    color: #fff;
+    border: none;
+    border-radius: .5rem; 
+    padding: .75rem;
+    font-size: .9rem;
+    justify-self: center; /* Estica o botão para preencher a largura total */
+}
+
+input[type="checkbox"]{
+    width: 17px;
+    height: 17px;
+    vertical-align: bottom;
+}
+
+
+footer{
+  width: 840px;
+  margin: 50px auto 36px auto;
+  display: flex;
+  padding: 20px 40px; /* Adiciona espaço interno (vertical e horizontal) */
+  justify-content: space-between; /* Distribui o espaço entre os elementos */
+  align-items: center; /* Centraliza verticalmente o conteúdo */
+}
+
+/*CSS Class selectors*/
+
+.socialmedia img {
+    /* Define um tamanho para os ícones */
+    width: 30px; 
+    height: 30px; 
+    margin-left: 10px; /* Adiciona espaço entre os ícones */
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+
+.gallery {
+  display: flex;
+  justify-content: space-around; /* Distribui o espaço entre as figuras */
+  align-items: flex-start; /* Alinha os itens ao topo */
+  margin-top: 12px;
+  width: 100%; 
+}
+
+.gallery figure {
+  display: flex;
+  flex-direction: column; /* Empilha os filhos verticalmente */
+  max-width: 150px;       /* Limite a largura para caber no layout */
+  margin: 0 5px;          /* Adiciona margem lateral */
+}
+
+.gallery figure img {
+    max-width: 100%; /* Garante que a imagem se ajuste à figura */
+    height: 100px;
+    object-fit: cover;
+}
+
+figcaption{
+  text-align: center;
+  margin-top: 5px; /* Adiciona um pequeno espaço entre a imagem e a legenda */
+}
+
+.information{
+  text-align: center;
+  padding: 15px;
+  line-height: 1.4; /*espaçamento entre linhas*/
+}
+
+.form-inputs{
+  grid-column: 2 / 3;
+  display: grid;
+  gap: 10px;
+  align-items: start;
+}
+
+.main-inputs{
+   display: grid;
+   grid-template: auto auto / 1fr 1fr; /* Divide em duas colunas iguais */
+   gap: 10px;
+}
+
+.main-inputs label, .main-inputs input{
+    display: block;  /*   Garante que o label e input de Name fiquem na 1ª coluna e Email na 2ª */
+}
+
+.main-inputs input{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+    
+}
+
+.form-inputs fieldset, .form-inputs textarea {
+  grid-column: 1 / -1; /* Ocupa todas as colunas disponíveis dentro de form-inputs */
+}
+
+.form-actions{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
