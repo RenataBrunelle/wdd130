@@ -85,13 +85,6 @@ footer{
   align-items: center; /* Centraliza verticalmente o conteúdo */
 }
 
-table, th, td{
-  border: 1px solid var(--fourth-color);
-  border-top: 1px solid var(--fourth-color);
-  padding: 3px;
-}
-
-
 /*CSS Class selectors*/
 
 .socialmedia img {
@@ -360,71 +353,3 @@ figcaption{
     border: 1px solid var(--primary-color);
     border-radius: 4px;
 }
-
-.trips article{
-    margin-top: 50px;
-    width: 100%;
-}
-
-.trip1, .trip2, .trip3{
-    display: flex;
-    gap: 20px;
-    align-items: center; 
-    margin-bottom: 40px;
-    /*align-items: flex-start; Alinha a imagem e o texto pelo topo */
-}
-
-.trips article img{
-  flex-shrink: 0; /* Impede que a imagem encolha */
-  width: 300px;
-  height: 200px;
-  padding: 0;
-  object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer, cortando as bordas */
-  border-radius: 1rem;
-  box-shadow: 0 0 10px;
-}
-
-.trip1 p, .trip2 p, .trip3 p{
-  flex-grow: 1;  /* Permite que o parágrafo ocupe o espaço restante */
-  text-align: justify;
-  font-size: 19px;
- 
-}
-
-.table-trips{
-    width: 90%;
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 75px;
-    font-size: 22px;
-}
-
-.title-table{
-  background-color: var(--third-color);
-  color: var(--second-color); 
-  font-size: 30px;
-}
-
-.trips-contact{
-    width: 90%;
-    margin: 0 auto;
-    margin-top: 60px;
-    background-color: var(--third-color);
-    color: var(--second-color);
-    padding: 30px;
-    text-align: center;
-    font-size: 23px;
-    border-radius: 3rem;
-
-}
-
-.trip-contact-link{
-  margin-top: 10px;
-}
-
-.trip-contact-link a {
-  color: var(--five-color);
-}
-
-
-/*Para alinhar um item é preciso definir uma largura específica para ele*/
